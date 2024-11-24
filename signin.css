@@ -1,0 +1,41 @@
+body {
+    background-color: #f8cfcf;
+    width: 100vw;
+    height: 100vh;
+}
+.bi-person-circle {
+    font-size: 80px;
+    color: #a91f45;
+}
+.btn {
+    background-color: #a91f45;
+    color: white;
+}
+.mycon {
+    background-color: #f8cfcf;
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 140px;
+}
+input {
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+}
+@media screen and (max-width: 768px) {
+    .mycon{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mycon{
+        width: 500px;
+    }
+}
+a {
+    color: gray;
+}

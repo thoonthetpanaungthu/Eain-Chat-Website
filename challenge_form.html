@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Challenge</title>
+  <!-- Font Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- End of Font Links -->
+  <link rel="shortcut icon" href="about_img/eainchat.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Nunito';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #a91f45;
+      background-color: #ffefdc;
+    }
+
+    .form-container {
+      background-color: #FFF8F0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h2 {
+      color: #a91f45;
+      text-align: center;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+    }
+
+    .form-group label {
+      flex: 1;
+      color: #a91f45;
+      margin-right: 3px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="file"] {
+      flex: 2;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .buttons input[type="submit"],
+    .buttons input[type="reset"] {
+      padding: 7px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .buttons input[type="submit"],
+      .buttons input[type="reset"] {
+        width: 48%;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>SUBMIT YOUR CHALLENGE</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" placeholder="Doctor">
+      </div>
+
+      <div class="form-group">
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file">
+      </div>
+
+      <div class="buttons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit Dish" onclick="alert('Submitted Succesfully!')">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

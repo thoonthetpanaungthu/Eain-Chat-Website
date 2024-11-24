@@ -1,0 +1,105 @@
+body {
+    background-color: #FFF8F0;
+}
+.recipe-fluid {
+    max-width: 140%;
+    height: 400px;
+}
+.hero-background {
+    background: linear-gradient( #f8cfcf, rgb(251, 239, 223), #FFF8F0);
+    padding: 40px;
+}
+.recipe-text-box {
+    color: #a91f45;
+    font-family: 'Nunito';
+    text-shadow: 2px 2px 5px rgba(254, 254, 254, 0.477);
+    text-align: justify;
+}
+.recipe-title {
+    transition: transform .2s;
+}
+.recipe-title:hover {
+    transform: scaleX(1.05);
+    cursor: pointer;
+}
+.recipe-fluid {
+    border-radius: 50%;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.477);
+    animation-name: recipedish;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes recipedish {
+    0% {transform: rotate(-3deg);}
+    25% {transform: rotate(3deg);}
+    35% {transform: rotate(-3deg);}
+    50% {transform: rotate(3deg);}
+    100% {transform: rotate(-3deg);}
+}
+.tut-title {
+    color: #a91f45;
+    text-shadow: 2px 2px 5px rgba(254, 254, 254, 0.477);
+    font-family: 'Caveat';
+    font-size: 40px;
+    transition: transform .2s;
+}
+.tut-title:hover {
+    transform: scale(1.1);
+}
+.recipes-container {
+    margin-top:  2px;
+    background: linear-gradient(to top, #f8cfcf, rgb(251, 239, 223), #FFF8F0);
+    padding: 50px;
+}
+hr {
+    color: #a91f45;
+}
+.ingredients-list {
+    line-height: 30px;
+    list-style-type: circle;
+    color: #a91f45;
+}
+.preparation {
+    color: #a91f45;
+    line-height: 30px;
+}
+.video-title {
+    color: #a91f45;
+    font-family: 'Nunito';
+    text-align: center;
+}
+.tutorial {
+    border: 3px solid #a91f45;
+    margin-top: 30px;
+}
+.tutorial-container {
+    display: flex;
+    justify-content: center;
+}
+.container4 {
+    background: linear-gradient( #f8cfcf, rgb(251, 239, 223), #FFF8F0);
+}
+.shop-link {
+    color: #a91f45;
+    text-decoration: none;
+}
+.shop-link:hover {
+    color: #6a162e;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.submit-link {
+    color: #FFF8F0;
+    border: 0;
+    background-color: #a91f45;
+    border-radius: 10px;
+    padding: 15px;
+}
+.submit-link:hover {
+    color: #FFF8F0;
+    border: 0;
+    background-color: #a91f45;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: underline;
+}

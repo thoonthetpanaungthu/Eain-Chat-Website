@@ -1,0 +1,134 @@
+body {
+    font-family: 'Caveat', cursive;
+    background-color: #ffefdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #a91f45;
+    font-family: 'Nunito';
+}
+
+.container {
+    background-color: #FFF8F0; 
+    padding: 30px;
+    border-radius: 35px;
+    max-width: 470px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(75, 73, 73, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-family: 'Nunito';
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-methods img {
+    width: 44px;
+    height: auto;
+}
+
+.date-select {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.date-select select,
+.date-select input[type="number"] {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 48%;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttons .confirm {
+    background-color: #28a745;
+}
+
+.buttons .reset {
+    background-color: #dc3545;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .payment-methods img {
+        width: 30px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    label {
+        font-size: 14px;
+    }
+}

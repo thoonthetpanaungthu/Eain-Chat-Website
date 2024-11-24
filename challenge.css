@@ -1,0 +1,216 @@
+/* Hero image styling start */
+body {
+    margin: 0;
+    background-color: #FFF8F0;
+}
+
+/* Background and Layout */
+.custom-background {
+background: linear-gradient( #f8cfcf, #FFF8F0 ) ;
+padding: 20px 0;
+}
+
+.text-container {
+padding: 20px;
+text-align: left;
+margin-left: 30px;
+}
+
+.text-container h1 {
+color: #a91f45;
+font-family: 'Caveat';
+font-size: 3.4rem;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.subtitle {
+font-size: 1.0rem;
+color: #a91f45;
+margin-top: 20px;
+font-family: 'Nunito';
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.tagline {
+font-style: italic;
+font-family: 'Nunito';
+font-size: 1rem;
+color: #a91f45;
+margin-top: 10px;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.img-fluid {
+max-width: 70%;
+height: 300px;
+animation-name: plate;
+animation-duration: 30s;
+animation-iteration-count: infinite;
+}
+@keyframes plate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+.text-container {
+    text-align: center;
+}
+.text-container h1 {
+    font-size: 2rem;
+}
+}
+/* Hero image styling end */
+
+.q-img {
+    width: 100%;
+}
+.rules-title {
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.921);
+    color: #a91f45;
+}
+.container3 {
+    margin: 80px;
+}
+.bi-search-heart, .bi-cake2, .bi-camera, .bi-arrow-bar-up {
+    font-size: 27px;
+    margin-right: 15px;
+    text-shadow: 2px 2px 5px rgba(255, 250, 250, 0.477);
+}
+.rules-text {
+    font-family: 'Nunito';
+    text-align: left;
+    color: #a91f45;
+    transition: transform .2s;
+}
+.rules-text:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .rules-text:hover {
+        transform: scale(1);
+    }
+}
+.dish-title {
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.921);
+    margin-bottom: 70px;
+    color: #a91f45;
+}
+.container4 {
+    margin: 50px;
+}
+.dish-card {
+    border: 0;
+    border-radius: 0;
+    background-color: #be2d56;
+}
+.dish-name {
+    font-family: 'Nunito';
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.921);
+    font-size: 23px;
+    color: white;
+    margin: 10px;
+}
+.challenge-btn {
+    background-color:#FFF8F0;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.921);
+    margin: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+    color: black;
+    font-size: 40px;
+    transition: color .2s;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    color: black;
+
+}
+hr {
+    color: #a91f45;
+}
+/* large device view */
+@media screen and (min-width:768px) {
+    .slide1 {
+        display: block;
+    }
+    .slide2 {
+        display: none;
+    }
+}
+/* small device view */
+@media screen and (max-width:769px) {
+    .slide1 {
+        display: none;
+    }
+    .slide2 {
+        display: block;
+    }
+    .challenge-img {
+        width: 250px;
+    }
+    .card {
+        width: 257px;
+    }
+
+}
+.gallery-title {
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.921);
+    margin-bottom: 70px;
+    color: #a91f45;
+}
+.container5 {
+    margin: 50px;
+}
+.gallery-card {
+    border: 0;
+    background-color: #a91f45;
+    color: white;
+    border-radius: 0;
+    
+}
+.gallery-text {
+    margin-top: 20px;
+    font-family: 'Caveat';
+    font-size: 45px;
+}
+.gallery-text + p {
+    font-family: 'Nunito';
+    
+}
+.card-header {
+    font-family: 'Nunito';
+}
+.gallery-img {
+    height: 300px;
+}
+@media screen and (min-width:768px) {
+    .gallery-card {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:575px) {
+    .gallery-card {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}

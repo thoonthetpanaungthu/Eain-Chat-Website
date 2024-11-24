@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking</title>
+    <!-- Bootstrap CDN Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- External CSS Link-->
+     <link rel="stylesheet" href="baking.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="home_img/logo_black.png" type="image/x-icon">
+    <!-- Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap Icon Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- Fontfamilies-->
+     <!-- Caveat Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Nunito Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+        <!-- navbar brand -->
+         <a href="index.html" class="navbar-brand ms-5"> 
+            <img src="home_img/logo_black.png" alt="navbar_brand" class="brand-default">
+            <img src="home_img/logo_white.png" alt="navbar_brand" class="brand-hover">
+        </a>
+        
+        <!-- Toggler Button  -->
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-three-dots"></i> <!-- Bootstrap icon -->
+        </button>
+
+        <!-- Nav-items container -->
+    <div class="collapse navbar-collapse mx-5" id="nav_id">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Features  <i class="bi bi-pin-angle-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="challenge.html" class="dropdown-item">Cooking Challenges</a></li>
+                    <li><a href="" class="dropdown-item">Ingredients Shopping </a></li>
+                    <li><a href="kitchen_utensils.html" class="dropdown-item">Kitchen Utensils Shopping </a></li>
+                    <li><a href="" class="dropdown-item">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Recipe Hub <i class="bi bi-bookmarks-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="traditional.html" target="_blank" class="dropdown-item">Traditional Cuisines</a></li>
+                    <li><a href="baking.html" target="_blank" class="dropdown-item">Baking</a></li>
+                    <li><a href="healthy.html" target="_blank" class="dropdown-item">Healthy Diet Meals</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item"><a href="02_signin.html" class="nav-link">Sign in</a></li>
+            <li class="nav-item"><a href="01_signup.html" class="nav-link">Sign up</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!-- End of Navbar -->
+    
+    <div class="container-fluid hero" id="waytop">
+
+        <div class="herotext">
+
+            <h3>Whisk, Bake, Enjoy!</h3>
+
+            <p>Feel the joy of baking with our collection of mouthwatering pastries</p>
+
+            <button type="button" >Explore</button>
+
+        </div>
+
+    </div>
+
+   <br><br><br><br>
+   <div class="container-fluid ">
+    <div class="row justify-content-evenly align-items-center flex-wrap mb-5">
+        <div class="col-lg-6 col-8">
+            <h3 class="baketitle">Pastries</h3>
+        </div>
+        <div class="col-lg-4 col-3">
+            <div class="explore-box ">
+                <input type="search" class=" explore-input" placeholder="Search..." >
+                <button type="button" class=" explore-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-3 col-4 deli smallsize">
+                <a href="croissant.html" target="_blank"><img src="home_img/bk.jpg" alt="cake" class="mb-2"></a>
+                <h4>Croissant with buttery layers</h4>
+                <a href="macaron.html" target="_blank"><img src="home_img/bk1.jpg" alt="cake" class="mb-2"></a>
+                <h4>Cinnamon Rolls with sweet glaze</h4>
+            </div>
+            <div class="col-lg-5 col-7 deli bigsize mb-5">
+                <a href="macaron.html" target="_blank"><img src="home_img/bk2.jpg" alt="cake"></a>
+                <h4 >Macaron with almond meringue and ganache</h4>
+            </div>
+            <div class="col-lg-3 col-6 deli smallsize">
+                <a href="croissant.html" target="_blank"><img src="home_img/bk3.jpg" alt="cake" class="mb-2"></a>
+                <h4>Cheesecake with creamy filling and crust</h4>
+                <a href="cashew.html" target="_blank"><img src="home_img/bk4.jpg" alt="cake" class="mb-2"></a>
+                <h4>Churros with cinnamon sugar and chocolate dip</h4>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-3 col-4 deli smallsize">
+                <a href="" target="_blank"><img src="home_img/bk5.jpg" alt="cake" class="mb-2"></a>
+                <h4>Apple Pie with spiced apple filling</h4>
+                <a href="" target="_blank"><img src="home_img/bk6.jpg" alt="cake" class="mb-2"></a>
+                <h4>Fruit Tart with custard and fresh seasonal fruits </h4>
+            </div>
+            <div class="col-lg-5 col-7 deli bigsize mb-5">
+                <a href="" target="_blank"><img src="home_img/bk7.jpg" alt="cake"></a>
+                <h4>Tiramisu with coffee-soaked ladyfingers</h4>
+            </div>
+            <div class="col-lg-3 col-6 deli smallsize">
+                <a href="" target="_blank"><img src="home_img/bk8.jpg" alt="cake" class="mb-2"></a>
+                <h4>Raspberry Pancake with honey and butter</h4>
+                <a href="" target="_blank"><img src="home_img/bk9.jpg" alt="cake" class="mb-2"></a>
+                <h4>Chocolate Eclair with chocolate glaze</h4>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <div class="footer container-fluid p-5">
+        <!-- Go Back to Top Button -->
+        <a href="#waytop" class="go-top"><i class="bi bi-arrow-90deg-up scroll"></i></a>
+        <div class="row mx-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <img src="home_img/logo_white.png" alt="logo" class="logo">
+                <h5 class="my-4 footertitle"> Recipe Hub </h5>
+                <p><a href="traditional.html" target="_blank"> Traditional Cuisines</a></p>
+                <p><a href="baking.html"> Baking </a></p>
+                <p><a href="healthy.html"> Healthy Diet Meals</a></p>           
+            </div>
+            <div class="col-lg-2 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Useful Links</h5>
+                <p><a href="index.html"> Home </a></p>
+                <p><a href="about.html"> About us </a></p>
+                <p><a href="04_references.html"> Reference </a></p>
+                <p><a href="02_signin.html"> Sign in</a></p>
+                <p><a href="01_signup.html"> Sing up</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Features</h5>
+                <p><a href="challenge.html"> Cooking Challenges</a></p>
+                <p><a href="#"> Ingredients Shopping</a></p>
+                <p><a href="kitchen_utensils.html"> Kitchen Utensils Shopping</a></p>
+                <p><a href="#"> Forms </a></p>
+            </div>
+            <div class="col-lg-4 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Join Our Newsletter Now!</h5>
+                <p class="message"><a href="#">Get our latest and fun recipes updates by subscribing</a></p>
+                <div class="subscription-container">
+                    <input type="email" placeholder="Enter your mail" class="subscription-input">
+                    <button type="submit" class="subscription-button" onclick="alert('Thanks for subscribing ')">Subscribe</button>
+                </div>
+
+                
+                <!-- Include Font Awesome Library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                <div class=" social-icons mt-5">
+                    <a href="https://www.twitter.com" target="_blank" class="icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    
+                    
+                    <div class="carousel slide carousel-fade foodshow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active slideshow" data-bs-interval="200">
+                                <img src="home_img/pie.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pizza.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pancake.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/tteokbokki.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/kimbap.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/macoron.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/chicken.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/vegy.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pasta.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/lasagn.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/ramen.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/rice.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/skewers.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/steak.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/spaghetti.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/salad.jpg" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        
+        </div>
+        <hr>
+        <p class="copyright">© Copyright 2024. All rights reserved. Developed by Eain Chat.</p>
+    </div>
+    
+</body>
+</html>

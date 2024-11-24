@@ -1,0 +1,108 @@
+body {
+    font-family: 'Nunito';
+    background-color: #FFF8F0;
+}
+h3 {
+    text-align: center;
+    color: #a91f45;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    padding: 150px;
+    color: #a91f45;
+}
+.explore-box {
+    margin-left: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    float: right;
+    max-width: 200px; /* Ensures the container doesn't grow too wide */
+    height: 63px;
+}
+
+.explore-input {
+margin-bottom: 15px;
+border: 2px solid #a91f45;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+flex: 1;
+padding: 5px;
+outline: none;
+font-size: 16px;
+}
+
+.explore-button {
+height: 48px;
+background-color: #8a1938; /* Dark red color for the button */
+border: none;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+padding: 10px 15px;
+cursor: pointer;
+color: white;
+font-size: 18px;
+transition: background-color 0.3s ease;
+}
+.btn {
+    background-color: #a91f45;
+    color: white;
+    height: auto;
+}
+a {
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+.order {
+    background-color: #a91f45;
+    color: white;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+}
+.header {
+    background-color: #FFF8F0;
+    text-align: center;
+    padding:20px;
+    height: 50px;
+    font-family: 'Nunito';
+}
+.row {
+    margin-top: 40px;
+}
+.button1 {
+    background-color: #FFF8F0;
+    width: 60px;
+}
+.bi-cart-fill {
+    color: black;
+    font-size: 30px;
+}
+.bi-telephone-fill {
+    color: rgb(50, 194, 50);
+    font-size: 30px;
+    border-radius: 100px;
+    margin: auto;
+}
+.search-container {
+    margin: 40px;
+}
+input {
+    max-width: 400px;
+}
+button {
+    text-align: center;
+}
+img {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.text {
+    color: #a91f45;
+    font-size: 20px;
+}

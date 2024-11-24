@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Challenge</title>
+    <!-- Bootstrap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="about_img/eainchat.png" type="image/x-icon">
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- End of Font Links -->
+    <!-- CSS For Challenge Page -->
+    <link rel="stylesheet" href="challenge.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+        <!-- navbar brand -->
+         <a href="index.html" class="navbar-brand ms-5">
+            <img src="home_img/logo_black.png" alt="navbar_brand" class="brand-default">
+            <img src="home_img/logo_white.png" alt="navbar_brand" class="brand-hover">
+        </a>
+        
+        <!-- Toggler Button  -->
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-three-dots"></i> <!-- Bootstrap icon -->
+        </button>
+
+        <!-- Nav-items container -->
+    <div class="collapse navbar-collapse mx-5" id="nav_id">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Features  <i class="bi bi-pin-angle-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="challenge.html" class="dropdown-item">Cooking Challenges</a></li>
+                    <li><a href="" class="dropdown-item">Ingredients Shopping </a></li>
+                    <li><a href="kitchen_utensils.html" class="dropdown-item">Kitchen Utensils Shopping </a></li>
+                    <li><a href="" class="dropdown-item">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Recipe Hub <i class="bi bi-bookmarks-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="traditional.html" class="dropdown-item">Traditional Cuisines</a></li>
+                    <li><a href="baking.html" class="dropdown-item">Baking</a></li>
+                    <li><a href="healthy.html" class="dropdown-item">Healthy Diet Meals</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item"><a href="02_signin.html" class="nav-link">Sign in</a></li>
+            <li class="nav-item"><a href="01_signup.html" class="nav-link">Sign up</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <div class="container-fluid">
+        <div class="row  justify-content-center custom-background align-items-center">
+            <div class="col-md-6 text-container">
+                <h1 class="display-4">Cook, Share, Enjoy!</h1>
+                <p class="subtitle">Eain Chat's Cooking Challenge</p>
+                <p class="tagline">
+                "The best recipes come from daring to try. Step up to our cooking challenge!"
+                </p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="challenge_img/food_plate.png" alt="Cooking Challenge Bowl" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="confused-container d-flex justify-content-center mt-5">
+        <div class="col-md-6 col-sm-5 col-lg-6">
+            <img src="challenge_img/question.png" alt="Question" class="q-img">
+        </div>
+        
+    </div>
+
+    <div class="container3">
+        <h5 class="rules-title">How It Works</h5>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-3 d-flex align-items-start rules-container">
+                <i class="bi bi-search-heart"></i>
+                <div class="rules-text">
+                    <h4>Find A Challenge</h4>
+                    <p>Start by browsing the available cooking challenges. Look for one that sparks your interest or matches your cooking skills.</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-start rules-container">
+                <i class="bi bi-cake2"></i>
+                <div class="rules-text">
+                    <h4>Prepare Your Dish</h4>
+                    <p>Once you have picked a challenge, it’s time to get cooking! Follow the recipe or instructions provided in the challenge. Take your time, and have fun!</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-start rules-container">
+                <i class="bi bi-camera"></i>
+                <div class="rules-text">
+                    <h4>Take A Picture</h4>
+                    <p>After you’ve finished preparing your dish, take a great photo of it. Make sure the picture is clear and shows off all the effort you’ve put into your creation.</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-start rules-container">
+                <i class="bi bi-arrow-bar-up"></i>
+                <div class="rules-text">
+                    <h4>Submit Your Dish</h4>
+                    <p>Finally, upload your photo to the challenge form. This is your chance to share your dish with others!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container4">
+        <h4 class="dish-title">Our Challenges For You</h4>
+        <div class="carousel slide slide1"  id="carousel-id1">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center ">
+                        <div class="col-md-3">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/sichuan.jpg" alt="Sichuan Chicken" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Sichuan Chicken</h4>
+                                    <a href="sichuan.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/french_cake.jpg" alt="French Apple Cake" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Apple Cake</h4>
+                                    <a href="cashew.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/mushroom_soup.jpg" alt="Mushroom Soup" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Mushroom Soup</h4>
+                                    <a href="sichuan.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3">
+                            <div class="card dish-card ">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/meatballs.jpg" alt="Korean Meatballs" width="100%" height="258px" class="challenge-img">
+                                    <h4 class="dish-name">Korean Meatballs</h4>
+                                    <a href="cashew.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/cashew.jpg" alt="Cashew Chicken" width="100%" height="258px" class="challenge-img">
+                                    <h4 class="dish-name">Cashew Chicken</h4>
+                                    <a href="cashew.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/pobalano.jpg" alt="Pobalano Soup" width="100%" height="258px" class="challenge-img">
+                                    <h4 class="dish-name">Pobalano Soup</h4>
+                                    <a href="sichuan.html" target="_blank"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel prev and next icon -->
+                <a href="#carousel-id1" class="carousel-control-prev" data-bs-slide="prev"><i class="bi bi-caret-left-fill"></i></a>
+                <a href="#carousel-id1" class="carousel-control-next" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="carousel slide slide2"  id="carousel-id2">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="row ">
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/sichuan.jpg" alt="Sichuan Chicken" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Sichuan Chicken</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/french_cake.jpg" alt="French Apple Cake" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Apple Cake</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/mushroom_soup.jpg" alt="Mushroom Soup" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Mushroom Soup</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/meatballs.jpg" alt="Korean Meatballs" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Korean Meatballs</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/cashew.jpg" alt="Cashew Chicken" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Cashew Chicken</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center mb-5">
+                            <div class="card dish-card">
+                                <div class="card-body p-1">
+                                    <img src="challenge_img/pobalano.jpg" alt="Pobalano" width="100%" height="258px" class="challenge-img">
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="dish-name">Pobalano Soup</h4>
+                                    <a href="#"><button  class="challenge-btn">Show Your Skills!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- carousel prev and next icon -->
+                <a href="#carousel-id2" class="carousel-control-prev" data-bs-slide="prev"><i class="bi bi-caret-left-fill"></i></a>
+                <a href="#carousel-id2" class="carousel-control-next" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container5">
+        <h5 class="gallery-title">From Our Dear Challengers</h5>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card">
+                    <div class="card-header">
+                        By Isabella (Highschool student)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/pobalano_home.jpg" alt="Pobalano Homecook" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Pobalano Soup</h3>
+                        <p class="card-text">"Pobalano Soup is something that I have never tried and this challenge introduced me to this fire dish! I shared this soup to my roommates and they ate it so well."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card">
+                    <div class="card-header">
+                        By Sakura (University student)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/meatballs_home.jpg" alt="Meatballs Home" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Korean Meatballs</h3>
+                        <p class="card-text">"I really love korean food although I'm japanese. And I found korean meatballs challenge here and thought It would be fun participating! Food turned out sooo good."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card">
+                    <div class="card-header">
+                        By James Cater (Single Father)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/mushroom_soup_home.jpg" alt="Mushroom Soup Home" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Mushroom Soup</h3>
+                        <p class="card-text">"I've been really bored lately and didn't know what to cook for my children as a single father. And this challenge helped me cook up a new dish and my kids LOVED it."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card mt-5">
+                    <div class="card-header">
+                        By Maria Ed (Housewife)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/apple_cake.jpg" alt="French Apple Cake" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Apple Cake</h3>
+                        <p class="card-text">"This french apple cake's flavors are so vibrant and even my picky teen daughter loved it. The challenge was so fun to participate."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card mt-5">
+                    <div class="card-header">
+                        By Suzy Robinson (Middle-schooler)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/cashew_home.jpg" alt="Cashew" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Cashew Chicken</h3>
+                        <p class="card-text">"I'm a 15 year old girl and my love for cooking is huge! I heard about this website from my friend and saw a challenge feature. That's cool!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 d-flex justify-content-center">
+                <div class="card gallery-card mt-5">
+                    <div class="card-header">
+                        By Joseph Archie (A 60 year old man)
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="challenge_img/sichuan2.jpg" alt="Sichuan Home" class="gallery-img" width="100%">
+                        <h3 class="card-title gallery-text">Sichuan Chicken</h3>
+                        <p class="card-text">"I'm an old man who just loves cooking new things. This challenge thing helped me very much. Food is good."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container-fluid p-5">
+        <!-- Go Back to Top Button -->
+        <a href="#comeback" class="go-top"><i class="bi bi-arrow-90deg-up scroll"></i></a>
+        <div class="row mx-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <img src="home_img/logo_white.png" alt="logo" class="logo">
+                <h5 class="my-4 footertitle"> Recipe Hub </h5>
+                <p><a href="traditional.html"> Traditional Cuisines</a></p>
+                <p><a href="baking.html"> Baking </a></p>
+                <p><a href="healthy.html"> Healthy Diet Meals</a></p>           
+            </div>
+            <div class="col-lg-2 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Useful Links</h5>
+                <p><a href="index.html"> Home </a></p>
+                <p><a href="about.html"> About us </a></p>
+                <p><a href="04_references.html"> Reference </a></p>
+                <p><a href="02_signin.html"> Sign in</a></p>
+                <p><a href="01_signup.html"> Sing up</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Features</h5>
+                <p><a href="challenge.html"> Cooking Challenges</a></p>
+                <p><a href="#"> Ingredients Shopping</a></p>
+                <p><a href="kitchen_utensils.html"> Kitchen Utensils Shopping</a></p>
+                <p><a href="#"> Forms </a></p>
+            </div>
+            <div class="col-lg-4 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Join Our Newsletter Now!</h5>
+                <p class="message"><a href="#">Get our latest and fun recipes updates by subscribing</a></p>
+                <div class="subscription-container">
+                    <input type="email" placeholder="Enter your mail" class="subscription-input">
+                    <button type="submit" class="subscription-button" onclick="alert('Thanks for subscribing ')">Subscribe</button>
+                </div>
+
+                
+                <!-- Include Font Awesome Library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                <div class=" social-icons mt-5">
+                    <a href="https://www.twitter.com" target="_blank" class="icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    
+                    
+                    <div class="carousel slide carousel-fade foodshow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active slideshow" data-bs-interval="200">
+                                <img src="home_img/pie.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pizza.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pancake.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/tteokbokki.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/kimbap.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/macoron.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/chicken.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/vegy.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pasta.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/lasagn.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/ramen.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/rice.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/skewers.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/steak.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/spaghetti.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/salad.jpg" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        
+        </div>
+        <hr>
+        <p class="copyright">© Copyright 2024. All rights reserved. Developed by Eain Chat.</p>
+    </div>
+</body>
+</html>

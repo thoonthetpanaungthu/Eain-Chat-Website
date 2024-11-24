@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CDN Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- External CSS Link-->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="home_img/logo_black.png" type="image/x-icon">
+    <!-- Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap Icon Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- Fontfamilies-->
+     <!-- Caveat Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Nunito Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+        <!-- navbar brand -->
+         <a href="index.html" class="navbar-brand ms-5"> 
+            <img src="home_img/logo_black.png" alt="navbar_brand" class="brand-default">
+            <img src="home_img/logo_white.png" alt="navbar_brand" class="brand-hover">
+        </a>
+        
+        <!-- Toggler Button  -->
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-three-dots"></i> <!-- Bootstrap icon -->
+        </button>
+
+        <!-- Nav-items container -->
+    <div class="collapse navbar-collapse mx-5" id="nav_id">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Features  <i class="bi bi-pin-angle-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="challenge.html" target="_blank" class="dropdown-item">Cooking Challenges</a></li>
+                    <li><a href="ingredients.html" target="_blank" class="dropdown-item">Ingredients Shopping </a></li>
+                    <li><a href="kitchen_utensils.html" target="_blank" class="dropdown-item">Kitchen Utensils Shopping </a></li>
+                    <li><a href="review.html" target="_blank" class="dropdown-item">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Recipe Hub <i class="bi bi-bookmarks-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="traditional.html" target="_blank" class="dropdown-item">Traditional Cuisines</a></li>
+                    <li><a href="baking.html" target="_blank" class="dropdown-item">Baking</a></li>
+                    <li><a href="healthy.html" target="_blank" class="dropdown-item">Healthy Diet Meals</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" target="_blank" class="nav-link">About us</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item"><a href="02_signin.html" class="nav-link">Sign in</a></li>
+            <li class="nav-item"><a href="01_signup.html" class="nav-link">Sign up</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <div class="container-fluid box" id="comeback">
+        <!-- Text Section -->
+        <div class="text-section" >
+            <h1 >Welcome to Eain Chat <i class="bi bi-house-heart"></i></h1>
+            <h3>Your Easy Guide to Cooking at Home!</h3>
+            <p>
+                Cooking should be fun, delicious, and accessible! Here, you’ll find simple, step-by-step recipes with tutorial videos to bring your favorite dishes to life.
+            </p>
+            <p>
+                Whether you're a teen exploring quick snacks, a student needing budget meals, or a housewife adding variety to family dinners, we’ve got something for you!
+            </p>
+            <a href="#wonder"><button type="button" class="border rounded-pill"><i class="bi bi-search-heart"></i> Explore Recipes </button></a>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="home_img/vid.gif" alt="Cooking Step 1" class=" rounded-start-pill first">
+            <img src="home_img/vid6.gif" alt="Cooking Step 2" class="rounded-top-pill second">
+            <img src="home_img/vid4.gif" alt="Cooking Step 3" class="rounded-bottom-pill third">
+            <img src="home_img/vid3.gif" alt="Cooking Step 4" class="rounded-end-pill fourth">
+        </div>
+          
+    </div>
+    
+    <br>
+    <hr style="color: #a91f45;">
+
+    <div class="container foodbox " id="wonder">
+        <h2 style="text-align: center; color: #a91f45;" ><b>Recipe Hub</b></h2>
+        <p style="text-align: center;  color: #a91f45; font-family: 'Caveat', cursive; font-size: 1.5rem;" >A world of flavors at your fingertips – start exploring!</p>
+        <div class="row rect">
+            <div class="col-md-4 col-6 pic g-0">
+                <img src="home_img/tteokbokki2.jpg" alt="Traditional Food">
+            </div>
+            <div class="col-md-4 col-6 word ">
+                <h3 class="red">Traditional Cuisine</h3>
+                <p class="cursive">Timeless flavors from around the world!</p>
+                <a href="traditional.html" target="_blank"><button type="button" class="rounded-end-pill">Dive in <i class="bi bi-caret-right"></i></button></a>
+            </div>
+            <div class="col-md-4 col-6 pic g-0">
+                <img src="home_img/diet8.jpg" alt="Diet Meals">
+            </div>
+            
+            <div class="col-md-4 col-6 word ">
+                <h3 class="red">Baking</h3>
+                <p class="cursive">Delicious breads to Delightful pastries</p>
+                <a href="baking.html" target="_blank"><button type="button" class="rounded-end-pill">Dive in <i class="bi bi-caret-right"></i></button></a>
+            </div>
+            <div class="col-md-4 col-6 pic g-0">
+                <img src="home_img/cake.jpg" alt="Traditional Food">
+            </div>
+            <div class="col-md-4 col-6 word ">
+                <h3 class="red">Healthy Diet Meals</h3>
+                <p class="cursive">Nutritious meals that taste great too!  </p>
+                <a href="healthy.html" target="_blank"><button type="button" class="rounded-end-pill">Dive in <i class="bi bi-caret-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr style="color: #a91f45;">
+
+    <div class="container-fluid">
+        <div class="row justify-content-center flex-wrap align-items-center p-3">
+            <div class="col-md-7 col-12">
+                <h3 class="yellow mb-5"><b>Join Our Cooking Challenge!</b></h3>
+                <p>Ready to put your cooking skills to the test? Join our Cooking Challenge!</p>
+                <p>Simply choose a challenge, prepare your dish, snap a photo, and submit it to share your creation. It's a fun way to get creative in the kitchen and connect with fellow food lovers. </p>
+                <p>Think you’re up for it? Join now and let’s get cooking!</p>
+                <a href="challenge.html" target="_blank" class="circle"><button type="button" class="rounded-pill">Join now <i class="bi bi-caret-right"></i></button></a>
+            </div>
+            <div class="col-md-4 col-7 mt-5">
+                <h3 class="blue">Seasonal Bites to try <i class="bi bi-egg-fried"></i></h3>
+                <div class="carousel slide carousel-fade recommendation" data-bs-ride="carousel" id="carousel-id">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/shwe.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Burmese Shwe Yin Aye</h3>
+                                   <p class="card-text">Summer Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/fruitbowl2.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Korean Hwachae (Fruit Bowl)</h3>
+                                   <p class="card-text">Summer Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/tealeaf.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Burmese Tea Leaf Salad</h3>
+                                   <p class="card-text">Spring Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/bibmbap.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Korean Bibimbap</h3>
+                                   <p class="card-text">Spring Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/risitto.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Italian Mushroom Risotto</h3>
+                                   <p class="card-text">Autumn Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/pumpkinpie.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">American Pumpkin Pie</h3>
+                                   <p class="card-text">Autumn Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/kimjistew.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Korean Kimchi Stew</h3>
+                                   <p class="card-text">Winter Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                   <img src="home_img/lasagn2.jpg" alt="food" height="350px" class="card-img-top">
+                                   <h3 class="card-title">Italian Lasagna Bolognese</h3>
+                                   <p class="card-text">Winter Food</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#carousel-id" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon "></span></a>
+                        <a href="#carousel-id" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <div class="container-fluid promo-container mt-5">
+        <div class="row  flex-wrap">
+            <div class="col-md-6 promo-box left-box">
+                <div class="content">
+                    <img src="home_img/tomato.png" alt="Ingredients">
+                    <div class="text-container " style="color: #a91f45;">
+                        <h2><b>Ingredient Shopping</b></h2>
+                        <p>Get fresh ingredients with great discounts!</p>
+                        <a href=""><button class="shop-btn">Shop now   <i class="bi bi-cart2"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 promo-box right-box">
+                <div class="content">
+                    <img src="home_img/pot.png" alt="Utensils">
+                    <div class="text-container" style="color: white;">
+                        <h2><b>Kitchen Essentials</b></h2>
+                        <p>Find top tools and appliances, all at reasonable prices!</p>
+                        <a href="kitchen_utensils.html"><button class="shop-btn1">Shop now   <i class="bi bi-cart2"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br><br><br>
+   
+    <div class="container-fluid review-box mt-5">
+        <h4 >Reviews of</h4>
+        <h2>Our Happy Cooks <i class="bi bi-emoji-laughing"></i></h2>
+        <!-- Carousel for larger devices -->
+        <div class="carousel slide slide1 " data-bs-ride="carousel" id="carousel-id1">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"I never thought I’d enjoy cooking this much! The recipes are simple, and the ingredient shopping feature makes it so easy to get started." </p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="Profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"Cooking is now a breeze!"</b></p>
+                                <p>Kellen Heller, Housewife, USA</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"With a tight schedule, I needed quick recipes, and this site delivered. The ingredients and tools are affordable, and the instructions are so clear!"</p>                     
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"Perfect for a busy student!"</b></p>
+                                <p>Aiden Lee, College Student, South Korea</p>
+                               </div>
+                            </div>
+                        </div>      
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000" >
+                    <div class="row justify-content-center" >
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"I’ve tried so many recipes from here, and they’ve all been a hit. Love the seasonal suggestions and detailed tips!"<br><br></p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"A chef’s dream for home cooking!"</b></p>
+                                <p>Lily Tran, Aspiring Chef, Vietnam</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"Finding healthy yet delicious recipes has always been a challenge. This site has options I love, plus ingredient shopping that’s so convenient!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"My go-to for healthy meals!"</b></p>
+                                <p>Maya Singh, Fitness Trainer, India</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"I’ve found unique and easy recipes to share with my audience. The kitchen essentials store is a lifesaver too!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"Perfectly curated recipes!"</b></p>
+                                <p>Myaing, Food Blogger, Myanmar</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mx-3 py-3 img1">
+                            <p>"Thanks to this site, I can whip up amazing meals even with my busy schedule. My family loves the variety!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-8">
+                                <p><b>"Family dinners are more exciting!"</b></p>
+                                <p>Sophia Martinez, Working Mom, Mexico</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#carousel-id1" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a href="#carousel-id1" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+
+            <div class="carousel-indicators" >
+                <button type="button" data-bs-target="#carousel-id1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-id1" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#carousel-id1" data-bs-slide-to="2" ></button>
+            </div>
+        </div>
+
+        <!-- Carousel for small devices -->
+         <div class="carousel slide slide3" data-bs-ride="carousel" id="carousel-id3">
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11 mx-3 py-3 img1">
+                            <p>"I never thought I’d enjoy cooking this much! The recipes are simple, and the ingredient shopping feature makes it so easy to get started."</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"Cooking is now a breeze!"</b></p>
+                                <p>Kellen Heller, Housewife, USA</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11 mx-3 py-3 img1">
+                            <p>"With a tight schedule, I needed quick recipes, and this site delivered. The ingredients and tools are affordable, and the instructions are so clear!"</p>                     
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"Perfect for a busy student!"</b></p>
+                                <p>Aiden Lee, College Student, South Korea</p>
+                               </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11  mx-3 py-3 img1">
+                            <p>"I’ve tried so many recipes from here, and they’ve all been a hit. Love the seasonal suggestions and detailed tips!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"A chef’s dream for home cooking!"</b></p>
+                                <p>Lily Tran, Aspiring Chef, Vietnam</p>
+                               </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11  mx-3 py-3 img1">
+                            <p>"Finding healthy yet delicious recipes has always been a challenge. This site has options I love, plus ingredient shopping that’s so convenient!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"My go-to for healthy meals!"</b></p>
+                                <p>Maya Singh, Fitness Trainer, India</p>
+                               </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11  mx-3 py-3 img1">
+                            <p>"I’ve found unique and easy recipes to share with my audience. The kitchen essentials store is a lifesaver too!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"Perfectly curated recipes!"</b></p>
+                                <p>Myaing, Food Blogger, Myanmar</p>
+                               </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row justify-content-center">
+                        <div class="col-11  mx-3 py-3 img1">
+                            <p>"Thanks to this site, I can whip up amazing meals even with my busy schedule. My family loves the variety!"</p>
+                            <div class="row justify-content-center">
+                               <div class="col-3">
+                                <img src="home_img/profile.jpg" alt="profile">
+                               </div>
+                               <div class="col-7">
+                                <p><b>"Family dinners are more exciting!"</b></p>
+                                <p>Sophia Martinez, Working Mom, Mexico</p>
+                               </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#carousel-id3" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a href="#carousel-id3" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+         </div>
+    </div>
+    
+   <br><br><br>
+   <div class="container my-5 ">
+    <div class="row justify-content-evenly">
+        <div class="col-8 col-lg-4 col-md-5 feedback border border-2 border-danger-subtle mb-5 p-3 rounded-top-pill text-center ">
+            <img src="home_img/phone.gif" alt="Happpier" width="100%" height="400" class="rounded-top-pill">
+            <h5><b>Got feedback to share? </b></h5>
+            <p> Fill review form and make your voice count!</p>
+            <a href="review.html"><button type="button" class="btn btn-outline-danger"> Fill here <i class="bi bi-caret-right"></i></button></a>
+        </div>
+        <div class="col-8 col-lg-4 col-md-5 suggest border border-2 border-danger-subtle mb-5 p-3  rounded-top-pill ms-4 text-center">
+            <img src="home_img/video.gif" alt="Good4u" width="100%" height="400" class="rounded-top-pill">
+            <h5><b>Craving something new? </b></h5>
+            <p>Tell us which dish you'd love to learn next!</p>
+            <a href="review.html"><button type="button" class="btn btn-outline-danger">Request here <i class="bi bi-caret-right"></i></button></a>
+            </a>
+        </div>
+    </div>
+   </div>
+
+
+    <br><br><br><br>
+    <div class="footer container-fluid p-5">
+        <!-- Go Back to Top Button -->
+        <a href="#comeback" class="go-top"><i class="bi bi-arrow-90deg-up scroll"></i></a>
+        <div class="row mx-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <img src="home_img/logo_white.png" alt="logo" class="logo">
+                <h5 class="my-4 footertitle"> Recipe Hub </h5>
+                <p><a href="traditional.html"> Traditional Cuisines</a></p>
+                <p><a href="baking.html"> Baking </a></p>
+                <p><a href="healthy.html"> Healthy Diet Meals</a></p>           
+            </div>
+            <div class="col-lg-2 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Useful Links</h5>
+                <p><a href="index.html"> Home </a></p>
+                <p><a href="about.html"> About us </a></p>
+                <p><a href="04_references.html"> Reference </a></p>
+                <p><a href="02_signin.html"> Sign in</a></p>
+                <p><a href="01_signup.html"> Sing up</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Features</h5>
+                <p><a href="challenge.html"> Cooking Challenges</a></p>
+                <p><a href="#"> Ingredients Shopping</a></p>
+                <p><a href="kitchen_utensils.html"> Kitchen Utensils Shopping</a></p>
+                <p><a href="review.html"> Forms </a></p>
+            </div>
+            <div class="col-lg-4 col-md-6 text mb-3">
+                <h5 class="mb-4 footertitle">Join Our Newsletter Now!</h5>
+                <p class="message"><a href="#">Get our latest and fun recipes updates by subscribing</a></p>
+                <div class="subscription-container">
+                    <input type="email" placeholder="Enter your mail" class="subscription-input">
+                    <button type="submit" class="subscription-button" onclick="alert('Thanks for subscribing ')">Subscribe</button>
+                </div>
+
+                
+                <!-- Include Font Awesome Library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                <div class=" social-icons mt-5">
+                    <a href="https://www.twitter.com" target="_blank" class="icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    
+                    
+                    <div class="carousel slide carousel-fade foodshow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active slideshow" data-bs-interval="200">
+                                <img src="home_img/pie.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pizza.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pancake.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/tteokbokki.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/kimbap.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/macoron.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/chicken.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/vegy.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/pasta.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/lasagn.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/ramen.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/rice.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/skewers.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/steak.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/spaghetti.jpg" alt="logo">
+                            </div>
+                            <div class="carousel-item slideshow" data-bs-interval="200">
+                                <img src="home_img/salad.jpg" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        
+        </div>
+        <hr>
+        <p class="copyright">© Copyright 2024. All rights reserved. Developed by Eain Chat.</p>
+    </div>
+    
+   
+
+</body>
+</html>

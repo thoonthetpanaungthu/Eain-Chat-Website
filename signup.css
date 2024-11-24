@@ -1,0 +1,40 @@
+body {
+    background-color: #f8cfcf;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito';
+}
+.bi-person-circle {
+    font-size: 80px;
+    color: #a91f45;
+}
+.btn {
+    background-color: #a91f45;
+    color: white;
+    font-size: 20px;
+}
+.mycon {
+    background-color: #f8cfcf;
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 140px;
+}
+input {
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+}
+@media screen and (max-width: 615px) {
+    .mycon{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .mycon{
+        width: 320px;
+    }
+}

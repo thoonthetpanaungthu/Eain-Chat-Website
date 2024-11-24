@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- End of Font Links -->
+    <link rel="shortcut icon" href="about_img/eainchat.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Nunito';
+            background-color: #ffefdc;
+            color: #a91f45;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .form-section {
+            padding: 40px;
+            background-color: #FFF8F0; 
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+        .h2 {
+            font-family: 'Nunito', sans-serif;
+            color: #FFFFFF;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        .radio-label {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        input[type="radio"]:checked + .radio-label {
+            background-color: gray;
+            color: white;
+            border-color: black;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        .slider {
+            width: 100%;
+            margin: 0 10px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .submit-reset-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .reset-btn {
+            background-color: #a91f45;
+            border: 0;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 15px;
+            color: #FFF8F0;
+            font-family: 'Nunito';
+        }
+        .submit-btn {
+            background-color: #a91f45;
+            border: 0;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 15px;
+            color: #FFF8F0;
+            font-family: 'Nunito';
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2 style="font-family: 'Nunito', sans-serif;">We would like your review to improve our website!</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Please enter your full name" name="name" required>
+
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" placeholder="Please specify your occupation" name="occupation" required>
+
+                <label>Overall Experience</label>
+                <div class="slider-container">
+                    <span>Bad</span>
+                    <input type="range" min="1" max="10" class="slider" required>
+                    <span>Excellent!</span>
+                </div>
+
+                <label>Would you recommend us to a friend?</label>
+                <div class="buttons">
+                    <input type="radio" id="yes" name="recommend" value="yes" required>
+                    <label for="yes" class="radio-label">👍Yes</label>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="no" class="radio-label">👎 No</label>
+                </div>
+
+                <label for="comment">Your comment to us:</label>
+                <textarea id="comment" placeholder="Please share your feedback and suggestions" name="comment" required></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree" required> &nbsp;&nbsp;
+                    <label for="agree">I agree that my review can be published on the website.</label>
+                </div>
+
+                <div class="submit-reset-buttons">
+                    <input class="reset-btn" type="reset" value="Reset">
+                    <input class="submit-btn" type="submit" value="Submit Review" class="submit" onclick="alert('Your message was sent succesfully!')">
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form-section">
+            <h2 style="font-family: 'Nunito', sans-serif;">You can request a recipe or suggest us a recipe to post on our website.</h2>
+            <form>
+                <label for="recipe-name">Your Name:</label>
+                <input type="text" id="recipe-name" placeholder="Please enter your full name" name="recipe-name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Please enter your email address" name="email" required>
+
+                <label for="suggestion">Your recipe suggestion:</label>
+                <textarea id="suggestion" placeholder="Please share your recipe idea" name="suggestion" required></textarea>
+
+                <label for="request">Your request for a recipe:</label>
+                <textarea id="request" placeholder="Please specify the type of recipe you're looking for" name="request" required></textarea>
+
+                <div class="submit-reset-buttons">
+                    <input class="reset-btn" type="reset" value="Reset">
+                    <input class="submit-btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

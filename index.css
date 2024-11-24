@@ -1,0 +1,459 @@
+/* General Reset */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FFF8F0;
+}
+
+/* Container */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Center content */
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* Text Section */
+.text-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 48%;
+}
+
+/* Image Gallery */
+.image-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 48%;
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 2.7rem;
+    color: #a91f45;
+    margin-bottom: 10px;
+    transition: margin-left 1.5s ease-in-out;
+}
+.text-section h1:hover {
+    margin-left: 40px;
+}
+.text-section h3 {
+    color: #a91f45;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 20px;
+    
+}
+.text-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.text-section button {
+    font-family: 'Caveat', cursive;
+    background: #a91f45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-section button:hover {
+    background-color: #8A1938;
+}
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #8A1938; /* Add a claret-colored border */
+    margin: 5px; /* Add spacing between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: rotate(2deg);
+    box-shadow: 0 0 7px 5px #d196a7;
+}
+.first {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.second {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.third {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.fourth {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* Responsive Layout */
+
+/* For small screens (below 768px) */
+@media (max-width: 767.98px) {
+    .box {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 10px;
+    }
+    .text-section {
+        max-width: 100%;
+    }
+    .image-gallery {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* For medium screens (768px to 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .box {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .text-section, .image-gallery {
+        max-width: 100%;
+    }
+}
+
+.rect {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a91f45;
+}
+.pic img {
+    width: 100%;
+    height: 350px;
+    transition: transform 0.3s ease-in;
+}
+.pic img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 5px #d196a7;
+}
+.word {
+    text-align: center;
+}
+.red {
+    color: white;
+    transition: margin-bottom 0.5s ease-in;
+}
+.red:hover {
+    margin-bottom: 30px;
+}
+.cursive {
+    font-family: 'Caveat', cursive;
+    color:white;
+    font-size: 1.5rem;
+}
+.word button {
+    font-family: 'Caveat', cursive;
+    background: white;
+    color: #a91f45;
+    border: none;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.word button:hover {
+    background-color: #f5f5f5;
+}
+
+.yellow {
+    font-size: 2rem;
+    color: #a91f45;
+    margin-bottom: 10px;
+    transition: margin-left 1.5s ease-in-out;
+}
+.yellow:hover {
+    margin-left: 40px;
+}
+.yellow~p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+.circle button {
+    font-family: 'Caveat', cursive;
+    background: #a91f45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.circle button:hover {
+    background-color: #8A1938;
+}
+.blue {
+    color: #a91f45;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-title {
+    margin-top: 10px;
+    color: #a91f45;
+    font-size: 1.5rem;
+}
+.card-text {
+    color: #a91f45;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+.promo-container {
+    border: 2px solid #a91f45; /* Border around the whole container */
+    padding: 0;
+}
+
+.promo-box {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 10px; /* Adds space between the image and text */
+}
+
+.left-box {
+    background-color: white; /* Light cyan */
+}
+
+.right-box {
+    background-color: #a91f45; /* Light beige */
+    border-left: 2px solid #f0f0f0; /* Divider between boxes */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.content img {
+    width: 300px; 
+    margin-right: 15px; /* Space between image and text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.text-container {
+    flex: 1; /* Allows the text and button to take up the remaining space */
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.text-container p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.shop-btn {
+    margin-top: 20px;
+    font-family: 'Caveat', cursive;
+    background-color: #a91f45; /* Red color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.shop-btn1 {
+    margin-top: 20px;
+    font-family: 'Caveat', cursive;
+    background-color: white; /* Red color */
+    color: #a91f45;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.shop-btn1:hover {
+    background-color: #f5f5f5;
+}
+.shop-btn:hover {
+    background-color: #8A1938; /* Darker red */
+}
+
+@media (max-width: 992px) {
+    .promo-box {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+    .content {
+        flex-direction: column; /* Center image and text */
+    }
+    .content img {
+        width: 300px; /* Adjust for smaller screens */
+
+    }
+}
+
+
+.img1 {
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    transition: box-shadow 0.3s ease-in
+}
+
+.img1:hover {
+    box-shadow: 0 0 20px white;
+}
+
+.img1 img {
+    width: 100%;
+    height: 80px;
+    border: 2px solid #a91f45;
+    border-radius: 50%;
+}
+
+.review-box .carousel-control-prev-icon {
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+.review-box .carousel-control-next-icon {
+    margin-left: 100px;
+    margin-bottom: 70px;
+}   
+
+/* Adjust the padding/margin between images and indicators */
+.review-box .carousel-inner {
+padding-bottom: 100px; /* Add space below images */
+}
+
+@media screen and (max-width:768px) {
+    .slide1 {
+    display: none;
+}
+.slide3 {
+    display: block;
+}
+.review-box .carousel-control-prev-icon {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.review-box .carousel-control-next-icon {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}  
+
+}
+
+@media screen and (min-width:768px) {
+.slide1 {
+    display: block;
+}
+.slide3 {
+    display: none;
+}
+}
+
+
+.review-box {
+    padding: 100px;
+    background: url(home_img/baking6.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+.review-box h4 {
+    font-weight: 700;
+    font-family: 'Caveat',cursive; 
+    text-align: center; 
+    color: white;
+    font-size: 2rem;
+}
+.review-box h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-bottom: 100px; 
+    color: white;
+}
+.img1 {
+    color: white;
+}
+.img1 p b {
+    font-weight: lighter;
+    font-family: 'Caveat',cursive; 
+    font-size: 1.5rem;
+}
+
+.feedback , .suggest {
+    color: #a91f45;
+}
+.feedback h5 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+.suggest h5 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+.feedback p {
+    font-family: 'Caveat',cursive; 
+    font-size: 1.4rem;
+}
+.suggest p {
+    font-family: 'Caveat',cursive; 
+    font-size: 1.4rem;
+}
+
+
+/* General styles */
+.feedback, .suggest {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback:hover, .suggest:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles with spacing */
+.feedback img, .suggest img {
+    transition: transform 0.3s ease, margin-bottom 0.3s ease;
+    margin-bottom: 15px; /* Added spacing below the image */
+}
+
+.feedback:hover img, .suggest:hover img {
+    transform: scale(1.1);
+    margin-bottom: 20px; /* Ensures extra spacing during hover */
+}
+
+
+/* Button hover effect */
+.feedback button:hover, .suggest button:hover {
+    background-color: #a91f45;
+    color: white;
+    border-color: #a91f45;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+

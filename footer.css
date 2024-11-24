@@ -1,0 +1,149 @@
+
+.footer {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #8a1938;
+}
+.logo~h5 {
+    font-weight: 300;
+}
+.footertitle~p  {
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: margin-left 0.5s ease;
+}
+.footertitle~p:hover {
+    margin-left: 10px;
+}
+.footertitle~p a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+.copyright {
+    font-weight: lighter;
+    text-align: center;
+}
+.icon i {
+    font-size: 20px;
+}
+.icon {
+    margin-top: 30px;
+}
+.logo {
+    height: 140px;
+    width: 150px;
+    transition: margin-left 0.5s ease;
+}
+.logo:hover {
+    margin-left: 10px;
+}
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc; /* Adds a border around the container */
+    max-width: 400px; /* Ensures the container doesn't grow too wide */
+
+}
+
+.subscription-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease; /* Adds a smooth transition for the glow effect */
+}
+
+/* Glow effect on focus */
+.subscription-input:focus {
+    box-shadow: 0 0 10px 2px white; /* Red glow effect */
+}
+
+.subscription-button {
+    background-color: #8a1938; /* Dark red color for the button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-button:hover {
+    background-color: #a91f45; /* Slightly lighter shade for hover effect */
+}
+
+.subscription-button:focus,
+.subscription-button:hover {
+    box-shadow: 0 0 10px 2px white; /* Red glow effect */
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 25px; /* Space between the icons */
+}
+
+.icon {
+    font-size: 24px; /* Size of the icons */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(2); /* Enlarge icon when hovered */
+}
+
+.icon.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the background visible and text transparent */ 
+}
+
+.icon.twitter:hover {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.icon.facebook:hover {
+    color: #1877F2; /* Facebook color */
+}
+.footer {
+    position: relative;
+}
+.go-top {
+    position: absolute;
+    top: -80px; /* Adjusts the button above the footer */
+    right: 20px; /* Aligns the button to the right */
+    background-color: #8a1938;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it stays above other content */
+    transition: top 0.3s ease;
+}
+.scroll {
+    font-size: 25px;
+}
+.go-top:hover {
+    background-color: #a91f45;
+    top: -100px;
+}
+.slideshow img {
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.foodshow {
+    margin-left: 100px;
+}
+.message {
+    font-size: 13px;
+}

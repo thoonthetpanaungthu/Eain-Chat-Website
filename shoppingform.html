@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Details</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_black.png">
+    <link rel="stylesheet" href="shoppingform.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- End of Font Links -->
+</head>
+<body>
+    
+
+<div class="container">
+    <h1 style="font-family: 'Nunito';">Shopping Details</h1>
+    <form method="POST" action="your-server-endpoint">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Phone number" required>
+        
+        <label>Choose your payment Method</label>
+        <div class="payment-methods">
+            
+            <input type="radio" name="payment" id="wave" value="Wave">
+            <label for="wave"><img src="Image/wave.png" alt="Wave Pay"></label>
+
+            <input type="radio" name="payment" id="kbz" value="KBZPay" required>
+            <label for="kbz"><img src="Image/kbz.png" alt="KBZ Pay"></label>
+            
+            <input type="radio" name="payment" id="paypal" value="PayPal">
+            <label for="paypal"><img src="Image/paypal.png" alt="PayPal"></label>
+            
+            <input type="radio" name="payment" id="apple" value="ApplePay">
+            <label for="apple"><img src="Image/apple.png" alt="Apple Pay"></label>
+        </div>
+        
+        <label for="ccn">Credit Card Number</label>
+        <input type="text" id="ccn" placeholder="123-xxx-xxx" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        
+        
+        <label>The day you want:</label>
+        <div class="date-select">
+            <input type="number" id="day" min="1" max="31" placeholder="Day" required>
+            <select id="month" required>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+
+            <select id="year" required>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+        </div>
+        
+        <div class="buttons">
+            <button type="reset" class="reset">Reset</button>
+            <button type="submit" class="confirm" onclick="alert('Order successfully')">Confirm</button>
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+</html>

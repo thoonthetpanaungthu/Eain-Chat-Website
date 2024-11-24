@@ -1,0 +1,256 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FFF8F0;
+}
+.rect {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8F0;
+}
+.pic img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 350px;
+    transition: transform 0.3s ease-in ;
+}
+.pic img:hover {
+    transform: scale(1.1);
+}
+.word {
+    text-align: center;
+}
+.red {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #a91f45;
+    transition: margin-bottom 0.5s ease-in;
+}
+.red:hover {
+    margin-bottom: 30px;
+}
+.cursive {
+    font-family: 'Caveat', cursive;
+    color: #a91f45;
+    font-size: 1.5rem;
+}
+.word button {
+    font-family: 'Caveat', cursive;
+    background: #a91f45;
+    color: white;
+    border: none;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.word button:hover {
+    background-color: #8A1938;
+}
+
+/* Style for .pic container */
+.pic {
+    position: relative; /* Establishes a positioning context for the child elements */
+    overflow: hidden;   /* Ensures no content spills out of the image boundaries */
+    display: inline-block;
+}
+
+/* Style for the <p> overlay */
+.pic p {
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 30px; /* Positions the paragraph 10px from the bottom */
+    left: 12px;   /* Positions the paragraph 10px from the left */
+    margin: 0;    /* Removes default margin */
+    padding: 5px 10px; /* Adds spacing inside the paragraph */
+    background-color: rgba(169, 31, 69, 0.8); /* Semi-transparent background */
+    color: #fff;  /* Makes the text color white */
+    font-size: 20px; /* Adjusts text size */
+    z-index: 1;   /* Ensures the paragraph is above the image */
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    padding: 30px;
+}
+
+/* Category Tabs */
+.category-tabs .category-link {
+    font-weight: bold;
+    color: #fff; /* Default text color */
+    background-color: #8A1938; /* Default background color */
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.category-tabs .category-link:hover {
+    background-color: #fff; /* Reversed background color */
+    color: #8A1938; /* Reversed text color */
+    border: 2px solid #8A1938; /* Optional border for hover */
+}
+
+.category-tabs .category-link.active {
+    background-color: #8A1938; /* Keep the same style as default */
+    color: #fff;
+    border: 2px solid #8A1938; /* Add a subtle border for active state */
+}
+
+
+/* Tab Content */
+.tab-container {
+    display : flex;
+    justify-content: flex-start;
+
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Tab Pane Item */
+.tab-pane-item {
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #a91f45;
+    padding-bottom: 10px;
+}
+
+/* Item Image */
+.item-image img {
+    border: 2px solid #8A1938;
+    display: flex;
+    justify-self: center;
+    margin-left: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Item Details */
+.item-details {
+    padding-left: 15px;
+}
+
+.item-title {
+    color: #8A1938;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+}
+.item-button {
+    background: #a91f45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.item-button:hover {
+    background-color: white;
+    color: #8A1938;
+    border: 1px solid #8A1938;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-item {
+        flex-direction: row;
+    }
+    .item-details {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .tab-pane-item {
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .explore-box {
+        width: 200px;                 /* Adjust the overall width */
+        margin: 0 auto;               /* Center the container itself */
+     
+    }
+}
+
+
+
+.explore-box {
+    border: none;
+    display: flex;
+    justify-content: center;
+    max-width: 400px; /* Ensures the container doesn't grow too wide */
+
+}
+
+.explore-input {
+    margin-bottom: 15px;
+    border: 2px solid #a91f45;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+}
+.explore-input:focus {
+    background-color: transparent;
+    border: 1px solid #a91f45;
+    box-shadow: 0 0 10px #a91f45;
+    color: #555;
+}
+
+.explore-button {
+    height: 48px;
+    background-color: #8a1938; /* Dark red color for the button */
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #a91f45; /* Slightly lighter shade for hover effect */
+}
+

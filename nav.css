@@ -1,0 +1,78 @@
+.navbar-brand img {
+    height: 90px;
+    width: 100px;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.nav-link{
+    margin: 0 10px; /* Add horizontal spacing */
+  }
+
+/*Background when being hovered*/
+nav {
+    background-color: #FFF8F0; /* Gradient for the default state */
+    transition: all 0.3s linear; /* Transition on all properties for smooth hover */
+}
+
+nav:hover {
+    background: #8A1938; /* Switch to a solid claret background on hover */
+}
+
+
+/* White navbar-brand and white colored navigation bar */
+
+/* Hide hover brand image initially */
+.brand-hover {
+    display: none;
+}
+
+/* When navbar is hovered, show the hover brand and hide the default brand */
+.navbar1:hover .brand-default {
+    display: none;
+}
+
+.navbar1:hover .brand-hover {
+    display: inline;
+}
+
+/* Default navbar item color */
+.navbar-nav .nav-link {
+    color: black; /* Set default color */
+    font-size: 20px;
+    transition: color 0.3s ease-in; /* Smooth color transition */
+}
+
+/* Hover effect for navbar items */
+.navbar1:hover .navbar-nav .nav-link {
+    color: white !important; /* Change color to white when navbar is hovered */
+}
+
+/*Toggler button when being hovered*/
+.navbar-toggler i {
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s ease-in;
+}
+.navbar1:hover .navbar-toggler i {
+    color: white;
+}
+
+/* Dropdown menu when being hovered*/
+.dropdown-menu .dropdown-item:hover {
+    background-color: #8A1938;
+}
+.dropdown-menu .dropdown-item {
+    color: black;
+    transition: color 0.2s ease-in;
+}
+.dropdown-menu li:hover .dropdown-item {
+    color: white;
+}
+@media screen and (max-width:768px) {
+    .navbar-collapse .dropdown-menu {
+        width: 250px;
+    }
+}
+
+  

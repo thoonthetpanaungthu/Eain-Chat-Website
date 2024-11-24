@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients Shopping</title>
+    <!--Bootstrap CDN Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo_black.png">
+    <!--Bootstrap Icons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- End of Font Links -->
+     <link rel="stylesheet" href="footer.css">
+     <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            font-family: 'Nunito';
+            background-color: #FFF8F0;
+            color: #a91f45;
+        }
+        .footer {
+            font-size: 13px;
+            text-align: left;
+        }
+        .header {
+            background-color: #FFF8F0;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Nunito';
+            color: #a91f45;
+        }
+        
+        .btn {
+            background-color: #a91f45;
+            color: white;
+            border: 0;
+        }
+        .btn:hover {
+            background-color: #811433;
+        }
+        a {
+            font-size: 20px;
+            color: white;
+            margin: 20px;
+        }
+        .order {
+            background-color: #a91f45;
+            color: white;
+            border-radius: 15px;
+            width: 50%;
+            border: 0;
+            padding: 10px;
+            font-size: 15px;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            height: 215px;
+        }
+        input {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .button-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .button-overlay button {
+            background-color: #a91f45;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .button-overlay button:hover {
+            background-color: #f8f8f8;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .col-md-3, .col-lg-3 {
+            margin-bottom: 20px;
+        }
+        
+        .bi-telephone-forward-fill {
+            color: black;
+            font-size: 30px;
+        }
+        .bi-telephone-forward-fill {
+            color: rgb(214, 114, 129);
+            font-size: 30px;
+            border-radius: 100px;
+            margin-right: 50px;
+        }
+        .explore-box {
+            margin-left: 40px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            float: right;
+            max-width: 200px; /* Ensures the container doesn't grow too wide */
+            height: 63px;
+        }
+
+.explore-input {
+    margin-bottom: 15px;
+    border: 2px solid #a91f45;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    flex: 1;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.explore-button {
+    height: 48px;
+    background-color: #8a1938; /* Dark red color for the button */
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .col-md-3 {
+                margin-bottom: 20px;
+            }
+            .order {
+                width: 30%;
+                margin-bottom: 10px;
+            }
+        }
+        .nav-box .nav-box-items .nav-link-box {
+            background-color: #a91f45;
+            color: white;
+        }
+        .hero-p {
+            font-size: 20px;
+        }
+        .hero-text-box h3 {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+        <!-- navbar brand -->
+         <a href="index.html" class="navbar-brand ms-5"> 
+            <img src="home_img/logo_black.png" alt="navbar_brand" class="brand-default">
+            <img src="home_img/logo_white.png" alt="navbar_brand" class="brand-hover">
+        </a>
+        
+        <!-- Toggler Button  -->
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-three-dots"></i> <!-- Bootstrap icon -->
+        </button>
+
+        <!-- Nav-items container -->
+    <div class="collapse navbar-collapse mx-5" id="nav_id">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Features  <i class="bi bi-pin-angle-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="challenge.html" target="_blank" class="dropdown-item">Cooking Challenges</a></li>
+                    <li><a href="" target="_blank" class="dropdown-item">Ingredients Shopping </a></li>
+                    <li><a href="kitchen_utensils.html" target="_blank" class="dropdown-item">Kitchen Utensils Shopping </a></li>
+                    <li><a href="review.html" target="_blank" class="dropdown-item">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown">Recipe Hub <i class="bi bi-bookmarks-fill"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="traditional.html" target="_blank" class="dropdown-item">Traditional Cuisines</a></li>
+                    <li><a href="baking.html" target="_blank" class="dropdown-item">Baking</a></li>
+                    <li><a href="healthy.html" target="_blank" class="dropdown-item">Healthy Diet Meals</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" target="_blank" class="nav-link">About us</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item"><a href="02_signin.html" class="nav-link">Sign in</a></li>
+            <li class="nav-item"><a href="01_signup.html" class="nav-link">Sign up</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!-- End of Navbar -->
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <img src="Image/Brocolli.png" alt="Special Discount">
+            </div>
+            <div class="col-md-5 text-center hero-text-box">
+                <h3>Fresh Fruit</h3>
+                <h4 style="font-size: 35px;">Vegetables 100% Organic</h4>
+                <p class="hero-p">Free pick up and delivery available.</p>
+                <!-- <a href="#" ><button class="btn">Shop Now</button></a> -->
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="header">Special Discount</h1>
+    <div class="container mt-5">
+        <ul class="nav nav-pills nav-box justify-content-center">
+            <li class="nav-item nav-box-items"><a href="#10%" class="nav-link nav-link-box active" data-bs-toggle="tab">10% Discount</a></li>
+            <li class="nav-item nav-box-items"><a href="#20%" class="nav-link nav-link-box" data-bs-toggle="tab">20% Discount</a></li>
+        </ul><br>
+
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="10%">                
+            <div class="row">
+                
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/Honey.png" alt="honey" width="190px" height="170px">
+                            <h3>Honey</h3>
+                            <p><del>$ 10</del> $9</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="shoppingform.html"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/12.png" alt="bacon" width="190px" height="170px">
+                            <h3>Mussels</h3>
+                            <p><del>$ 10</del> $9</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/beef balls.png" alt="beefball" width="190px" height="170px">
+                            <h3>Meatballs</h3>
+                            <p><del>$ 10</del> $9</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+             </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="card-footer d-flex justify-content-between align-items-center mt-5">
+        <div class="explore-box">
+            <input type="search" class=" explore-input" placeholder="Search..." >
+            <button type="button" class=" explore-button">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="box d-flex align-items-center mb-2">
+                        <i class="bi bi-telephone-forward-fill"></i>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h3>09 897 777 488</h3>
+                    <p>Support 24/7 time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="tab-content">
+            <div class="tab-pane" id="20%">                
+            <div class="row">
+                
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/Rabbit.png" alt="rabbit" width="190px" height="170px">
+                            <h3>Rabbit</h3>
+                            <p><del>$ 20</del> $16</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/10.png" alt="crab" width="190px" height="170px">
+                            <h3>Crab</h3>
+                            <p><del>$ 20</del> $16</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="Image/13.png" alt="shrimp" width="190px" height="170px">
+                            <h3>Shrimp</h3>
+                            <p><del>$ 20</del> $16</p>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-cart3"></i></button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-dark"><i class="bi bi-heart"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+   
+</div>
+
+
+
+<hr>
+
+
+
+    <div class="container mt-5">
+        <ul class="nav nav-pills nav-box justify-content-center">
+            <li class="nav-item nav-box-items mb-3"><a href="#meat" class="nav-link nav-link-box active" data-bs-toggle="tab">Fresh Meat</a></li>
+            <li class="nav-item nav-box-items"><a href="#vegetables" class="nav-link nav-link-box" data-bs-toggle="tab">Vegetables and Fruits</a></li>
+            <li class="nav-item nav-box-items"><a href="#products" class="nav-link nav-link-box" data-bs-toggle="tab">Dairy Products</a></li>
+            <li class="nav-item nav-box-items"><a href="#others" class="nav-link nav-link-box" data-bs-toggle="tab">Others</a></li>
+        </ul><br>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="meat">                
+            <div class="row">
+                
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/pork_bacon.png" alt="bacon" width="190px" height="170px">
+                                <h3>Bacon</h3>
+                                <p><b>$ 10</b></p>
+                                <a href="shoppingform.html"><button class="order">Order Now</button></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/chicken.png" alt="chicken" width="190px" height="170px">
+                                <h3>Whole Chicken</h3>
+                                <p><b>$ 8</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/sliced_raw_pork.png" alt="pork" width="190px" height="170px">
+                                <h3>Steak</h3>
+                                <p><b>$ 20</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/raw_duck.png" alt="duck" width="190px" height="170px">
+                                <h3>Duck</h3>
+                                <p><b>$ 8</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/turkey.png" alt="turkey" width="210px" height="170px">
+                                <h3>Turkey</h3>
+                                <p><b>$ 30</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/salmon.png" alt="salmon" width="210px" height="170px">
+                                <h3>Salmon</h3>
+                                <p><b>$ 30</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/11.png" alt="squid" width="190px" height="170px">
+                                <h3>Squid</h3>
+                                <p><b>$ 10</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/chicken_liver.png" alt="liver" width="210px" height="170px">
+                                <h3>Chicken Liver</h3>
+                                <p><b>$ 5</b></p>
+                                <button class="order">Order Now</button>
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    
+            <div class="tab-content">
+                <div class="tab-pane" id="vegetables"><br>                              
+                            <div class="row">
+
+                              <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/cabbage.png" alt="cabbage" width="190px" height="170px">
+                                    <h3>Cabbage</h3>
+                                    <p><b>$ 1</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/potato.png" alt="potato" width="250px" height="170px">
+                                    <h3>Potato</h3>
+                                    <p><b>$ 2</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/tomatoes.png" alt="omato" width="190px" height="170px">
+                                    <h3>Tomato</h3>
+                                    <p><b>$ 2</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/Brocolli.png" alt="brocolli" width="190px" height="170px">
+                                    <h3>Brocolli</h3>
+                                    <p><b>$ 3</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/Pumpkin.png" alt="pumpkin" width="190px" height="170px">
+                                    <h3>Pumpkin</h3>
+                                    <p><b>$ 2</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/Carrot.png" alt="carrot" width="190px" height="170px">
+                                    <h3>Carrot</h3>
+                                    <p><b>$ 1</b></p>
+                                    <button class="order">Order Now</button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                   <img src="Image/Cucumber.png" alt="cucumber" width="190px" height="170px">
+                               <h3>Cucumber</h3>
+                               <p><b>$ 1</b></p>
+                               <button class="order">Order Now</button>
+                           </div>
+                       </div>
+                       
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img src="Image/Coconut.png" alt="coconut" width="190px" height="170px">
+                                <h3>Coconut</h3>
+                            <p><b>$ 2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                    <img src="Image/Aubergine.png" alt="aubergine" width="190px" height="170px">
+                                <h3>Aubergine</h3>
+                            <p><b>$ 1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/Lime.png" alt="lime" width="190px" height="170px">
+                            <h3>Lime</h3>
+                        <p><b>$ 1</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                    </div>
+
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/Garlic.png" alt="garlic" width="190px" height="170px">
+                            <h3>Garlic</h3>
+                        <p><b>$ 2</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/Onion.png" alt="onion" width="190px" height="170px">
+                            <h3>Onion</h3>
+                        <p><b>$ 1</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/bell_peppers.png" alt="peppers" width="190px" height="170px">
+                            <h3>Bell pepper</h3>
+                        <p><b>$ 3</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/4.png" alt="chili" width="100px" height="170px">
+                            <h3>Red Chili Peppers</h3>
+                            <p><b>2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/3.png" alt="springonion" width="190px" height="170px">
+                            <h3>Spring Onion</h3>
+                            <p><b>1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/1.png" alt="ginger" width="190px" height="170px">
+                            <h3>Ginger</h3>
+                            <p><b>$ 2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Cilantro.png" alt="cilantro" width="190px" height="170px">
+                            <h3>Cilantro</h3>
+                            <p><b>$ 1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/2.png" alt="bokchoy" width="190px" height="170px">
+                            <h3>Bok choy</h3>
+                            <p><b>2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/5.png" alt="lettuce" width="190px" height="170px">
+                            <h3>Lettuce</h3>
+                            <p><b>1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/6.png" alt="beans" width="190px" height="170px">
+                            <h3>Yard Long Beans</h3>
+                            <p><b>1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Corn.png" alt="corn" width="190px" height="170px">
+                            <h3>Corn</h3>
+                            <p><b>1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/7.png" alt="peas" width="190px" height="170px">
+                            <h3>Snow Peas</h3>
+                            <p><b>2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Ladyfinger.png" alt="ladyfinger" width="190px" height="170px">
+                            <h3>Ladyfinger</h3>
+                            <p><b>1</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/9.png" alt="napacabbage" width="190px" height="170px">
+                            <h3>Napa Cabbage</h3>
+                            <p><b>2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Baby Corn.png" alt="corn" width="190px" height="170px">
+                            <h3>Baby corn</h3>
+                            <p><b>2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Enoki Mushrooms.png" alt="mushrooms" width="190px" height="170px">
+                            <h3>Enoki Mushrooms</h3>
+                            <p><b>3</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="tab-content">
+        <div class="tab-pane" id="products">
+                    <div class="row">
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/piece_of_cheese.png" alt="cheese" width="190px" height="170px">
+                            <h3>Cheese</h3>
+                            <p><b>$ 12</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Milk.png" alt="milk" width="190px" height="170px">
+                            <h3>Milk</h3>
+                            <p><b>$ 4</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/Yogurt.png" alt="yogurt" width="190px" height="170px">
+                            <h3>Yogurt</h3>
+                            <p><b>$ 2</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="Image/flour.png" alt="flour" width="190px" height="170px">
+                            <h3>Flour</h3>
+                            <p><b>$ 10</b></p>
+                            <button class="order">Order Now</button>
+                        </div>
+                    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+            <div class="tab-content">
+                <div class="tab-pane" id="others"><br>
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="Image/gochujang_sauce.png" alt="spicysauce" width="190px" height="170px">
+                        <h3>Gochujang sauce</h3>
+                        <p><b>$ 5</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="Image/Glutamate.png" alt="glutamate" width="190px" height="170px">
+                        <h3>Glutamate</h3>
+                        <p><b>$ 3</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="Image/Pipe Rigate.png" alt="piperigate" width="190px" height="170px">
+                        <h3>Pipe Rigate</h3>
+                        <p><b>$ 2</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="Image/Soy Sauce.png" alt="soysauce" width="190px" height="170px">
+                        <h3>Soy Sacuce</h3>
+                        <p><b>$ 1</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="Image/KoreanSpicy Sauce.png" alt="koreaspicy" width="170px" height="180px">
+                        <h3>Spicy Sauce</h3>
+                        <p><b>$ 2</b></p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="text-center">
+                       <img src="Image/Cashews.png" alt="cashew" width="170px" height="180px">
+                    <h3>Cashew</h3>
+                    <p><b>$ 3</b></p>
+                    <button class="order">Order Now</button>
+                </div>
+            </div>
+    
+
+                <div class="col-md-3">
+                    <div class="text-center">
+                       <img src="Image/Ketchup.png" alt="ketchup" width="170px" height="180px">
+                   <h3>Ketchup</h3>
+                   <p><b>$ 2</b></p>
+                   <button class="order">Order Now</button>
+               </div>
+           </div>
+
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="Image/Black pepper.png" alt="pepper" width="190px" height="170px">
+                <h3>Black pepper</h3>
+            <p><b>$ 2</b></p>
+            <button class="order">Order Now</button>
+        </div>
+    </div>
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="Image/Sugar.png" alt="sugar" width="200px" height="310px">
+                <h3>Sugar</h3>
+            <p><b>$ 3</b></p>
+            <button class="order">Order Now</button>
+        </div>
+        </div>
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="Image/Salt.png" alt="salt" width="200px" height="310px">
+                <h3>Salt</h3>
+            <p><b>$ 2</b></p>
+            <button class="order">Order Now</button>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+            <div class="text-center">
+                <img src="Image/Butter.png" alt="butter" width="200px" height="310px">
+            <h3>Butter</h3>
+        <p><b>$ 8</b></p>
+        <button class="order">Order Now</button>
+    </div>
+    </div>
+
+                    <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="Image/Cooking Oil.png" alt="oil" width="200px" height="310px">
+                            <h3>Cooking Oil</h3>
+                        <p><b>$ 10</b></p>
+                        <button class="order">Order Now</button>
+                </div>
+                </div>
+
+</div>
+</div>
+</div>
+
+
+</div> 
+    
+
+</body>
+</html>
